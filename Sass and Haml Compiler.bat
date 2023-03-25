@@ -1,5 +1,5 @@
 @echo off
-title Sass Watcher - Sass Compiler - Haml Compiler
+title Sass Watcher - Sass Compiler - Haml Compiler - By R.S.T
 
 
 
@@ -18,9 +18,9 @@ REM sass --update same as above two			=		Instant update without watch
 
 :Menu
 cls
-echo ============================================================================
-echo =============== Sass Watcher - Sass Compiler - Haml Compiler ===============
-echo ============================================================================
+echo =======================================================================================
+echo =============== Sass Watcher - Sass Compiler - Haml Compiler - By R.S.T ===============
+echo =======================================================================================
 echo.
 echo 1. Watch Sass
 echo 2. Compile Sass
@@ -248,7 +248,7 @@ echo This part has been particularly streamlined to follow Ruby but...
 pause
 echo You can definitely install Sass using NodeJS npm
 echo --------
-echo The drawback of this though, as I last read on the official Sass website, is that it may be slightly slower due to one or two reasons
+echo The drawback of this though, as I last read on the official Sass website, is that it may be slightly slower
 echo .
 echo 1. Install once - Ruby gem
 echo 2. Install once - NodeJS npm
@@ -308,10 +308,10 @@ exit /b
 :Help_Install_Node
 cls
 echo Directing to...
-echo https://
+echo https://nodejs.org/en/download
 echo.
 pause
-start https://
+start https://nodejs.org/en/download
 goto Menu
 
 
