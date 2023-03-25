@@ -2,6 +2,10 @@
 color 0a
 title R.S.T Personalised
 
+
+REM ====================== Password is ConnConnect =====================
+
+
 :skipper
 set music=0
 goto Home
