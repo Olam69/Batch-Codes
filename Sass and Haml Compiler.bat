@@ -12,7 +12,7 @@ REM SASS
 rem
 REM sass --watch input.sass:output.css		=		Watch files for changes.
 REM sass --watch input-dir:output-dir		=		Watch directories for changes.
-REM sass --update same as above two			=		Instant update without watch
+REM sass --update same as above two		=		Instant update without watch
 
 
 
@@ -133,11 +133,12 @@ goto Menu
 
 REM ================= Haml ==================
 
+
 :Compile_Haml
 cls
-echo ============================================
-echo =============== Haml ^| BETA ===============
-echo ============================================
+echo ===============================================
+echo =============== Haml ^| Compile ===============
+echo ===============================================
 echo.
 echo Paste [drive:\path\filename.file_extension] of the HAML file (add no brackets):
 set /p haml_file=~ 
@@ -156,6 +157,10 @@ haml render "%haml_file%" > "%haml_new%"
 
 
 goto Menu
+
+
+
+
 
 
 
@@ -208,14 +213,14 @@ if %answer%==0 goto Menu
 :Help_Continue_2
 cls
 echo Step 3: Solutions
-echo Since Sass is correctly installed on your machine, then here are sone things that might be the cause of the program not working
+echo Since Sass is correctly installed on your machine, then here are some things that might be the cause of the program not working
 echo.
 pause
 echo.
 echo (01) - Your inputs are wrong:
-echo      + Make sure to check your input is very correct while following the Sass prompts in this program
+echo      + Make sure to check that your input are very correct while following the Sass prompts in this program
 echo      + These include your filepath, your filename, and (dot) your file_extension; and the path, name and (dot) extension you want to save the resulting output file with
-echo      +
+echo.
 echo      + BEST TO COPY AND PASTE DIRECTLY FROM YOUR FILE EXPLORER
 echo.
 pause
@@ -223,14 +228,14 @@ echo.
 echo (02) - You are adding extra apostrophes:
 echo      + Unless your filepath or filename contain apostrophes, you have ZERO need to add any
 echo      + Neither at the start, nor at the end
-echo      +
+echo.
 echo      + NO NEED TO ADD EXTRA APOSTROPHES IF THEY ARE NOT IN YOUR FILE
 echo.
 pause
 echo.
 echo (03) - Addition
-echo      + This will be the last choice, but if you are very sure you are doing everything right...
-echo      +
+echo      + This will be the last resort, but if you are very sure you are doing everything right...
+echo.
 echo      + RUN AS ADMIN
 echo.
 pause
